@@ -15,7 +15,7 @@ function mazeSolver(maze, index = [0, 0]) {
     return "";
   }
 
-  //mark a cell as visited so we cannot reviist
+  //mark a cell as visited so we cannot revisit
   maze[row][col] = "*";
 
   //recursive phase
