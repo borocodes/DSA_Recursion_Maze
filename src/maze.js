@@ -6,13 +6,14 @@
 
 // My Solution
 function mazeSolver(maze, index = [0, 0]) {
-  //create rows and columns
+  //create rows and columns for readability
   let row = index[0] // = first array
   let col = index[1] // = first element
   
   ///base case
   if (maze[row][col] === 'e') {return ""}
   
+  //mark a cell as visited so we cannot reviist
   maze[row][col] = "*";
   
   //recursive phase
